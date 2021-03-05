@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/app_theme_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/margin_10"
+            android:textSize="@dimen/text_size_30"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:text="@string/creative">
+        </TextView>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="40dp"
+            android:paddingTop="40dp"
+            android:background="@drawable/top_rounded_corner_bg"
+            android:paddingEnd="40dp">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/margin_30"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_solid_bg"
+                android:text="@string/department" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnReporter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/margin_30"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_solid_bg"
+                android:text="@string/reporter" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPublic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/margin_30"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_solid_bg"
+                android:text="@string/public_" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context=".WriteFragment">
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="40dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_20"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/add_contact"
+            android:layout_marginBottom="@dimen/margin_40">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/black"
+            android:text="@string/title"
+            android:layout_marginBottom="@dimen/margin_10">
+        </TextView>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:padding="@dimen/margin_15"
+            android:textColor="@color/black"
+            android:background="@drawable/gery_rounded_corner_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginTop="@dimen/text_size_20"
+            android:textColor="@color/black"
+            android:text="@string/detail"
+            android:layout_marginBottom="@dimen/margin_10">
+        </TextView>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:hint="@string/detail"
+            android:gravity="left"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/black"
+            android:padding="@dimen/margin_15"
+            android:background="@drawable/rounded_corner_bg"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginTop="@dimen/text_size_20"
+            android:textColor="@color/black"
+            android:text="@string/file"
+            android:layout_marginBottom="@dimen/margin_10">
+        </TextView>
+
+        <EditText
+            android:id="@+id/file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/file"
+            android:padding="@dimen/margin_15"
+            android:textColor="@color/black"
+            android:background="@drawable/gery_rounded_corner_bg"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="50dp"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/blue_rounded_solid_bg"
+            android:text="@string/sign_in" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
